@@ -26,7 +26,6 @@ public class VoitureRepoTest {
             @Test
             public void supprimerVoiture() {
                  Proprietaire p1 = new Proprietaire("Ali" , "bnb");
-            Proprietaire p2 = new Proprietaire("Najat" , "bnbnbnb");
             entityManager.persistAndFlush(new Voiture ("MiolaCar","Uber","Blanche","M-2020", 2021, 180000,p1));
             entityManager.persistAndFlush(new Voiture ("MiniCooper","Uber","Rouge","C-2020", 2021, 180000,p1));
             voitureRepo.deleteAll();
