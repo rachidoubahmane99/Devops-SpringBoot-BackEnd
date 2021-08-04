@@ -18,9 +18,8 @@ public class VoitureRepoTest {
             VoitureRepo voitureRepo;
             @Test
             public void ajouterVoiture() {
-                Proprietaire p1 = new Proprietaire("Ali" , "bnbn");
             Proprietaire p2 = new Proprietaire("Najat" , "ddd");
-            Voiture voiture = new Voiture("MiolaCar","Uber","Blanche","M-2020",2021,180000,p1);
+            Voiture voiture = new Voiture("MiolaCar","Uber","Blanche","M-2020",2021,180000,p2);
             entityManager.persistAndFlush(voiture);
             assertThat(voiture.getId()).isNotNull();
             }
